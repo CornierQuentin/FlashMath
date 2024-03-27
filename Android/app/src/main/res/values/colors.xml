@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- System Color -->
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!-- Main Color -->
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+    <!-- Primary -->
+    <color name="primary">#C02031</color>
+
+    <!-- Monochromatic -->
+    <color name="mono_dark">#861629</color>
+    <color name="mono_mean">#FFCAD3</color>
+    <color name="mono_light">#FF95A7</color>
+
+    <!-- Complementary -->
+    <color name="complementary_dark">#2EC020</color>
+    <color name="complementary_light">#208616</color>
+
+    <!-- Shade -->
+    <color name="shade_1">#8C1823</color>
+    <color name="shade_2">#A61C2A</color>
+    <color name="shade_3">#D92537</color>
+    <color name="shade_4">#F2293D</color>
+
+    <!-- Other -->
+    <color name="card_main">#E6FFCAD3</color>
+    <color name="text">#E673141D</color>
+
+    <!-- Gradient -->
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+    <!-- Main Gradient -->
+    <color name="main_gradient_light">#D92537</color>
+    <color name="main_gradient_dark">#A61C2A</color>
+
+    <!-- Card Gradient -->
+    <color name="card_gradient_light">#F2FAC6CA</color>
+    <color name="card_gradient_dark">#CCFFCAD3</color>
+    <color name="text_highlight">#80F2293D</color>
+
+</resources>

@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">FlashMath</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="new_pack_title">Nouveau</string>
+    <string name="name_input_hint">Nom</string>
+    <string name="description_input_hint">Description</string>
+    <string name="add_button_hint">Créer une carte</string>
+    <string name="new_card_title">Nouvelle</string>
+    <string name="recto_input_hint">Recto</string>
+    <string name="verso_input_hint">Verso</string>
+
+    <string-array name="access_array">
+        <item>Privé</item>
+        <item>Public</item>
+    </string-array>
+</resources>

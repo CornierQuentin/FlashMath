@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_navigation"
+    app:startDestination="@id/homePageFragment">
+
+    <fragment
+        android:id="@+id/homePageFragment"
+        android:name="com.cornier.flashmath.ui.HomePage.HomePageFragment"
+        android:label="fragment_homepage"
+        tools:layout="@layout/fragment_homepage" >
+        <action
+            android:id="@+id/action_homePageFragment_to_packInfoFragment"
+            app:destination="@id/packInfoFragment" />
+        <action
+            android:id="@+id/action_homePageFragment_to_newPack"
+            app:destination="@id/newPack" />
+    </fragment>
+    <fragment
+        android:id="@+id/newPack"
+        android:name="com.cornier.flashmath.NewPack.NewPack"
+        android:label="fragment_new_pack"
+        tools:layout="@layout/fragment_new_pack" >
+        <action
+            android:id="@+id/action_newPack_to_homePageFragment"
+            app:destination="@id/homePageFragment" />
+        <action
+            android:id="@+id/action_newPack_to_newCardFragment"
+            app:destination="@id/newCardFragment" />
+        <action
+            android:id="@+id/action_newPack_to_packInfoFragment"
+            app:destination="@id/packInfoFragment" />
+        <argument
+            android:name="packCreationTitle"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/newCardFragment"
+        android:name="com.cornier.flashmath.NewCard.NewCardFragment"
+        android:label="fragment_new_card"
+        tools:layout="@layout/fragment_new_card" >
+        <action
+            android:id="@+id/action_newCardFragment_to_newPack"
+            app:destination="@id/newPack" />
+        <action
+            android:id="@+id/action_newCardFragment_to_packInfoFragment"
+            app:destination="@id/packInfoFragment" />
+        <argument
+            android:name="cardCreationTitle"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/packInfoFragment"
+        android:name="com.cornier.flashmath.InfoPack.PackInfoFragment"
+        android:label="PackInfoFragment" >
+        <action
+            android:id="@+id/action_packInfoFragment_to_homePageFragment"
+            app:destination="@id/homePageFragment" />
+        <action
+            android:id="@+id/action_packInfoFragment_to_newPack"
+            app:destination="@id/newPack" />
+        <action
+            android:id="@+id/action_packInfoFragment_to_newCardFragment"
+            app:destination="@id/newCardFragment" />
+        <action
+            android:id="@+id/action_packInfoFragment_to_revisionFragment"
+            app:destination="@id/revisionFragment" />
+        <argument android:name="pack"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/revisionFragment"
+        android:name="com.cornier.flashmath.Revision.RevisionFragment"
+        android:label="RevisionFragment" >
+        <action
+            android:id="@+id/action_revisionFragment_to_packInfoFragment"
+            app:destination="@id/packInfoFragment" />
+    </fragment>
+</navigation>
